@@ -1,0 +1,219 @@
+@keyframes zeroOpacity {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 0;
+  }
+}
+
+
+
+@keyframes moveh2One {
+
+  0%{
+    transform: translate(-30rem,15rem) rotate(90deg);
+    opacity: 0;
+
+  }
+  100%{
+    transform: translate(0,0) rotate(0);
+    opacity: 1;
+  }
+
+}
+
+
+
+@keyframes moveh2Two {
+
+  0%{
+    transform: translate(-10rem,0rem) rotate(390deg);
+    opacity: 0;
+
+  }
+  100%{
+    transform: translate(0,0) rotate(0);
+    opacity: 1;
+  }
+
+}
+
+
+
+
+@keyframes moveh2Three {
+
+  0%{
+    transform: translate(10rem,0);
+    opacity: 0;
+
+  }
+  100%{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+
+}
+
+
+@keyframes moveh2Four {
+
+  0%{
+    transform: translate(0,-7rem);
+    opacity: 0;
+
+  }
+  100%{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+
+}
+
+
+
+
+//Paragraph Animation
+
+@keyframes movePOne {
+
+
+  0%{
+    transform: translate(10rem,0);
+    opacity: 0;
+  }
+
+
+  90%{
+    transform: translate(-2rem,0);
+  }
+  100%{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+
+}
+
+
+
+@keyframes movePTwo {
+
+  0%{
+    transform: translate(10rem,0);
+    opacity: 0;
+  }
+
+
+  90%{
+    transform: translate(-2rem,0);
+  }
+
+  100%{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+}
+
+
+
+
+@keyframes movePThree {
+
+  0%{
+    transform: translate(-10rem,0);
+    opacity: 0;
+  }
+
+  90%{
+    transform: translate(2rem,0);
+  }
+  100%{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+
+}
+
+
+@keyframes movePFour {
+
+
+  0%{
+    transform: translate(10rem,0);
+    opacity: 0;
+  }
+
+  90%{
+    transform: translate(-2rem,0);
+  }
+  100%{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+}
+
+
+
+
+@keyframes moveUpButton {
+  0%{
+    opacity: 0;
+    transform: translateY(15rem);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+@keyframes moveLeftButton {
+  0%{
+    opacity: 0;
+    transform: translateX(-15rem);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+}
+
+@keyframes moveRightButton {
+  0%{
+    opacity: 0;
+    transform: translateX(15rem);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+}
+
+
+
+
+
+
+@keyframes fadeInButton {
+  0%{
+    transform: rotate(180deg);
+    opacity: 0;
+  }
+
+  100%{
+    transform: rotate(0);
+    opacity: 1;
+  }
+
+}
+
+
+

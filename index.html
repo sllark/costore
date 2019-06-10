@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CoStore: Best Clothing Store for Everyone</title>
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="nav__menu">
+  <span></span>
+</div>
+
+
+
+<header class="header">
+
+  <div class="header__shipping">
+    <div class="header__shipping__leftside"><p>Free shipping for standard order over $100
+    </p></div>
+    <div class="header__shipping__rightside">
+      <ul>
+        <li>Help & Contact</li>
+        <li>My Account</li>
+        <li>EN</li>
+        <li>USD</li>
+      </ul>
+    </div>
+  </div>
+
+  <nav class="header__nav" role="navigation">
+
+    <div class="header__nav__leftside">
+      <h2>CoStore</h2>
+      <ul class="header__nav__links">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="product.html">Shop</a></li>
+        <li><a href="shoping-cart.html">Features</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="header__nav__rightside">
+
+
+      <svg class="nav-search-svg">
+        <use xlink:href="img/sprite.svg#icon-search" class="nav-search"></use>
+      </svg>
+      <svg class="nav-search-svg">
+        <use xlink:href="img/sprite.svg#icon-cart" class="nav-search"></use>
+      </svg>
+      <svg class="nav-heart-svg">
+        <use xlink:href="img/sprite.svg#icon-heart" class="nav-heart"></use>
+      </svg>
+
+    </div>
+
+
+    <div class="header__mobileNav">
+
+      <div class="header__shipping mobileShipping ">
+        <div class="header__shipping__leftside"><p>Free shipping for standard order over $100
+        </p></div>
+        <hr>
+        <div class="header__shipping__rightside">
+          <ul>
+            <li>Help & Contact</li>
+            <li>My Account</li>
+            <li>EN</li>
+            <li>USD</li>
+          </ul>
+        </div>
+      </div>
+
+      <ul class="header__mobileNav__links">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="product.html">Shop</a></li>
+        <li><a href="shoping-cart.html">Features</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+    </div>
+
+
+  </nav>
+
+
+
+</header>
+
+
+
+
+<main>
+
+
+
+  <section class="section__heroSlider">
+
+
+    <div class="heroSlider__slider slider">
+
+      <div class="heroSlider__slides slides">
+
+        <div class="slide">
+
+          <div class="slide__content__text opacityZeroAnimation">
+            <h2 class="slide__content__text__h2">Women Collection</h2>
+            <p class="aa">New Winter Season</p>
+            <button class="buttonAnimation"><a href="product.html" class="btn btn--normal">Shop Now</a></button>
+          </div>
+
+
+          <img src="img/slide-01.jpg" alt="">
+        </div>
+        <div class="slide slider__offLeft">
+
+          <div class="slide__content__text">
+            <h2 class="slide__content__text__h2">Man New Collection</h2>
+            <p class="aa">Jackets & Coats</p>
+            <button><a href="product.html" class="btn btn--normal">Shop Now</a></button>
+          </div>
+
+          <img src="img/slide-02.jpg" alt="">
+        </div>
+        <div class="slide slider__offLeft">
+
+          <div class="slide__content__text">
+            <h2>New Arrivals</h2>
+            <p class="aa">Special for Men</p>
+            <button><a href="product.html" class="btn btn--normal">Shop Now</a></button>
+          </div>
+
+
+          <img src="img/slide-03.jpg" alt="">
+        </div>
+      </div>
+
+
+      <div class="heroSlider__leftBtn leftBtn slider__btn" ><svg>
+        <use xlink:href="img/sprite.svg#icon-arrow-left2"></use>
+      </svg></div>
+      <div class="heroSlider__rightBtn rightBtn slider__btn">
+        <svg>
+          <use xlink:href="img/sprite.svg#icon-arrow-right2"></use>
+        </svg>
+      </div>
+
+
+    </div>
+
+
+
+  </section>
+
+  <section class="section__categories">
+
+    <a href="#productSection" class="section__categories__item" data-cat="woman">
+      <div class="section__categories__item__hoverBG"></div>
+      <div class="section__categories__item__text">
+        <h2>Women</h2>
+        <p>Spring 2019</p>
+      </div>
+
+      <button class="section__categories__item__btn btn">
+        <div>Shop Now</div>
+      </button>
+
+
+    </a>
+
+    <a href="#productSection" class="section__categories__item" data-cat="man">
+      <div class="section__categories__item__hoverBG"></div>
+
+      <div class="section__categories__item__text">
+        <h2>Men</h2>
+        <p>Spring 2019</p>
+      </div>
+
+      <button class="section__categories__item__btn btn">
+        <div>Shop Now</div>
+      </button>
+
+
+    </a>
+
+    <a href="#productSection" class="section__categories__item" data-cat="accessory">
+      <div class="section__categories__item__hoverBG"></div>
+
+      <div class="section__categories__item__text">
+        <h2>Accessories</h2>
+        <p>New Trend</p>
+      </div>
+
+      <button class="section__categories__item__btn btn">
+        <div>Shop Now</div>
+      </button>
+
+
+    </a>
+
+
+  </section>
+
+
+  <section class="products" id="productSection">
+
+
+    <div class="products__header">
+
+      <h1>
+        Product Overview
+      </h1>
+      <div class="products__header__categories">
+
+        <ul class="products__header__categories__links">
+          <li class="active" id="catAll" data-cat="all" data-tag="all"><a href="#productSection" class="productCategoryLinks">All Product</a></li>
+          <li id="catMan" data-cat="man" data-tag="man"><a href="#productSection" class="productCategoryLinks">Man</a></li>
+          <li id="catWoman" data-cat="woman" data-tag="woman"><a href="#productSection" class="productCategoryLinks">Woman</a></li>
+          <li id="catBag" data-cat="belt" data-tag="accessory"><a href="#productSection" class="productCategoryLinks">Belts</a></li>
+          <li id="catShoes" data-cat="shoes" data-tag="accessory"><a href="#productSection" class="productCategoryLinks">Shoes</a></li>
+          <li id="catWatches" data-cat="watch" data-tag="accessory"><a href="#productSection" class="productCategoryLinks">Watches</a></li>
+        </ul>
+
+
+        <div class="products__header__categories__tools">
+
+          <div class="products__header__categories__tools__filter">
+            <button class="btn filter__btn btn--sec">
+              <svg>
+                <use xlink:href="img/sprite.svg#icon-heart
+"></use>
+              </svg>Filter</button>
+
+
+
+          </div>
+
+          <div class="products__header__categories__tools__search">
+
+            <button class="btn searh__btn btn--sec"><svg><use xlink:href="img/sprite.svg#icon-search"></use></svg>Search</button>
+
+
+          </div>
+
+        </div>
+
+
+
+
+
+      </div>
+
+
+      <div class="filter__options hide">
+
+        <div class="filter__option__sortBy">
+
+          <h3>Sort By</h3>
+          <ul>
+            <li>Default</li>
+            <li>Popularity</li>
+            <li>Rating</li>
+            <li class="active">Newness</li>
+            <li>Price: Low to High</li>
+            <li>Ptice: High to Low</li>
+          </ul>
+        </div>
+
+        <div class="filter__option__price">
+
+          <h3>Price</h3>
+          <ul>
+            <li>$0.00 - $50.00</li>
+            <li>$50.00 - $100.00</li>
+            <li>$100.00 - $150.00</li>
+            <li>$150.00 - $200.00</li>
+            <li>$200.00+</li>
+          </ul>
+        </div>
+
+
+        <div class="filter__option__color">
+
+          <h3>Color</h3>
+          <ul>
+            <li>Black</li>
+            <li>White</li>
+            <li>Blue</li>
+            <li>Gray</li>
+            <li>Red</li>
+            <li>Green</li>
+          </ul>
+
+        </div>
+
+        <div class="filter__option__tags">
+
+          <h3>Tags</h3>
+          <ul>
+            <li>Fashion</li>
+            <li>Lifestyle</li>
+            <li>Denim</li>
+            <li>GUCCI</li>
+            <li>Streetstyle</li>
+            <li>Crafts</li>
+          </ul>
+
+        </div>
+
+
+
+
+
+      </div>
+      <div class="search__box hide">
+
+        <button>
+          <svg><use xlink:href="img/sprite.svg#icon-search"></use></svg>
+        </button>
+        <input type="search" placeholder="Search">
+
+      </div>
+
+
+    </div>
+
+
+
+    <div class="products__content">
+
+
+      <!--<div class="product">-->
+        <!--<div class="product__img">-->
+          <!--<img src="img/product-01.jpg" alt="">-->
+          <!--<button class="btn btn&#45;&#45;primary">View More</button>-->
+        <!--</div>-->
+        <!--<div class="product__text">-->
+          <!--<div class="product__text__about"><p>Porduct Name Here</p>-->
+            <!--<svg>-->
+              <!--<use xlink:href="img/sprite.svg#icon-heart"></use>-->
+            <!--</svg>-->
+          <!--</div>-->
+
+          <!--<p class="product__text__price"> $22.09</p>-->
+
+        <!--</div>-->
+
+      <!--</div>-->
+
+    </div>
+
+
+    <button class="products__moreBtn btn btn--primary btn--LGray">Load More</button>
+
+
+
+  </section>
+
+
+</main>
+
+<footer class="footer">
+
+  <div class="footer__content">
+    <div class="footer__content__cat">
+
+      <h2>Categories</h2>
+
+      <ul>
+        <li>Man</li>
+        <li>Woman</li>
+        <li>Shoes</li>
+        <li>Watches</li>
+      </ul>
+
+
+    </div>
+    <ul class="footer__content__links">
+      <h2>Follow us</h2>
+
+      <li>facebook</li>
+      <li>Twitter</li>
+      <li>instagram</li>
+      <li>behance</li>
+    </ul>
+
+
+    <div class="footer__content__notification">
+
+      <h2>Notifications</h2>
+
+
+      <p>To get monthly updates from us about our new featues and products, just provide us with your email.</p>
+
+      <div class="footer__content__notification__input">
+
+        <input type="email" placeholder="your email" >
+        <button>
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-envelop"></use>
+          </svg>
+        </button>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="footer__copyright">
+
+    <p>This webpage is recreated by AbdulRehman, originnaly created by Infinity and  Design by <a href="http://www.styleshout.com/">styleshout</a></p>
+
+  </div>
+
+
+</footer>
+
+
+<div class="productPreview close">
+
+<div class="closeBtnX">
+  <div class="closeBtn"></div>
+
+</div>
+  <div class="productPreview__gallery">
+
+
+
+    <div class="productPreview__gallery__slider slider">
+
+
+        <div class="productPreview__gallery__dots dots">
+
+        </div>
+
+
+
+
+        <div class="productPreview__gallery__slides slides">
+
+          <div class="slide">
+            <img src="img/gallery-04.jpg" alt="">
+          </div>
+          <div class="slide slider__offLeft">
+            <img src="img/gallery-02.jpg" alt="">
+          </div>
+          <div class="slide slider__offLeft">
+            <img src="img/gallery-03.jpg" alt="">
+          </div>
+
+
+
+        </div>
+
+
+
+      <div class="productPreview__gallery__leftBtn leftBtn slider__btn" id="slider__leftBtn">&#8592;</div>
+
+      <div class="productPreview__gallery__rightBtn rightBtn slider__btn" id="slider__rightBtn">&#8594;</div>
+
+
+      </div>
+
+
+
+
+
+    <div class="productPreview__gallery__content">
+
+      <div class="productPreview__gallery__content__text">
+
+        <h3>Light Weight Jacket</h3>
+        <h4>$58.79</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cum dicta laborum libero recusandae.</p>
+      </div>
+
+
+      <div class="productPreview__gallery__content__options">
+
+        <div class="productPreview__gallery__content__options__size">
+          <label for="productSize">Size</label>
+          <select name="productSize" id="productSize">
+            <option value="Size-small">S Small</option>
+            <option value="Size-medium">S Medium</option>
+            <option value="Size-large">S Large</option>
+            <option value="Size-XL">S XLarge</option>
+          </select>
+        </div>
+
+
+
+        <div class="productPreview__gallery__content__options__color">
+          <label for="productColor">Color</label>
+          <select name="productColor" id="productColor">
+            <option value="Red">Red</option>
+            <option value="White">White</option>
+            <option value="Black">Black</option>
+            <option value="Blue">Blue</option>
+          </select>
+        </div>
+
+
+        <div class="productPreview__gallery__content__options__num productNumCount">
+          <div class="productNumDown">-</div>
+
+          <div class="productPreview__gallery__content__options__num__input productNumberInput">
+
+            <input type="number" value="1" max="10" min="1" class="productNum">
+          </div>
+          <div class="productNumUp">+</div>
+        </div>
+        <button class="btn btn--primary">ADD TO CART</button>
+      </div>
+
+
+    </div>
+
+
+
+  </div>
+
+</div>
+
+
+
+<div class="searchModal closeModal">
+
+  <div class="searchModal__content">
+
+    <div class="searchModal__content__close">
+      <div class="searchModal__content__close__btn"></div>
+
+    </div>
+
+
+    <form action="#" class="searchModal__content__box">
+
+      <button>
+        <svg>
+          <use xlink:href="img/sprite.svg#icon-search
+"></use>
+        </svg>
+      </button>
+
+
+      <input type="search" placeholder="Search...">
+
+    </form>
+  </div>
+
+
+
+</div>
+
+
+<script src="js/slider.js"></script>
+
+<script>
+
+
+    //=========================================================================
+    //-----------------------------Hero Slider---------------------------------
+    //=========================================================================
+
+        var heroSlider=new Slider('heroSlider');
+
+        heroSlider.auto=true;
+        heroSlider.slideContentAnimation=true;
+        heroSlider.init();
+
+
+    var productPreview=new Slider('productPreview__gallery');
+
+    productPreview.auto=false;
+    productPreview.makeDots=false;
+    productPreview.makeImageDots=true;
+    productPreview.init();
+
+
+
+</script>
+<script src="js/products.js"></script>
+<script src="js/script.js"></script>
+<script src="js/nav.js"></script>
+
+</body>
+</html>

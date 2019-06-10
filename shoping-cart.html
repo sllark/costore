@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CoStore: Best Clothing Store for Everyone</title>
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="nav__menu">
+  <span></span>
+</div>
+
+
+
+<header class="header">
+
+  <div class="header__shipping">
+    <div class="header__shipping__leftside"><p>Free shipping for standard order over $100
+    </p></div>
+    <div class="header__shipping__rightside">
+      <ul>
+        <li>Help & Contact</li>
+        <li>My Account</li>
+        <li>EN</li>
+        <li>USD</li>
+      </ul>
+    </div>
+  </div>
+
+  <nav class="header__nav" role="navigation">
+
+    <div class="header__nav__leftside">
+      <h2>CoStore</h2>
+      <ul class="header__nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Shop</a></li>
+        <li class="active"><a href="shoping-cart.html">Features</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="header__nav__rightside">
+
+
+      <svg class="nav-search-svg">
+        <use xlink:href="img/sprite.svg#icon-search" class="nav-search"></use>
+      </svg>
+      <svg class="nav-search-svg">
+        <use xlink:href="img/sprite.svg#icon-cart" class="nav-search"></use>
+      </svg>
+      <svg class="nav-heart-svg">
+        <use xlink:href="img/sprite.svg#icon-heart" class="nav-heart"></use>
+      </svg>
+
+    </div>
+
+
+    <div class="header__mobileNav">
+
+      <div class="header__shipping mobileShipping ">
+        <div class="header__shipping__leftside"><p>Free shipping for standard order over $100
+        </p></div>
+        <hr>
+        <div class="header__shipping__rightside">
+          <ul>
+            <li>Help & Contact</li>
+            <li>My Account</li>
+            <li>EN</li>
+            <li>USD</li>
+          </ul>
+        </div>
+      </div>
+
+      <ul class="header__mobileNav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Shop</a></li>
+        <li class="active"><a href="shoping-cart.html">Features</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+    </div>
+
+
+  </nav>
+
+
+
+</header>
+
+
+
+<main>
+
+  <div class="shopingCart">
+
+
+
+    <div class="shopingCart__itemSec">
+      <ul class="shopingCart__itemSec__header">
+        <li>Product</li>
+        <li>PRICE</li>
+        <li>QUANTITY</li>
+        <li>TOTAL</li>
+      </ul>
+
+      <div class="shopingCart__itemSec__allItems">
+
+        <div class="shopingCart__itemSec__allItems__item">
+
+          <div class="shopingCart__itemSec__allItems__item__about">
+            <img src="img/product-min-01.jpg" alt="">
+            <h3>New Jacket</h3>
+          </div>
+
+          <div class="shopingCart__itemSec__allItems__item__price">$33</div>
+
+
+
+          <div class="shopingCart__itemSec__allItems__item__quantity productNumCount">
+            <div class="productNumDown">-</div>
+
+            <div class="productPreview__gallery__content__options__num__input productNumberInput">
+
+              <input type="number" value="1" max="10" min="1" class="productNum">
+            </div>
+            <div class="productNumUp">+</div>
+          </div>
+
+
+
+
+          <div class="shopingCart__itemSec__allItems__item__total">$33</div>
+
+        </div>
+        <div class="shopingCart__itemSec__allItems__item">
+
+          <div class="shopingCart__itemSec__allItems__item__about">
+            <img src="img/product-min-01.jpg" alt="">
+            <h3>New Jacket</h3>
+          </div>
+
+          <div class="shopingCart__itemSec__allItems__item__price">$33</div>
+
+
+
+          <div class="shopingCart__itemSec__allItems__item__quantity productNumCount">
+            <div class="productNumDown">-</div>
+
+            <div class="productPreview__gallery__content__options__num__input productNumberInput">
+
+              <input type="number" value="1" max="10" min="1" class="productNum">
+            </div>
+            <div class="productNumUp">+</div>
+          </div>
+
+
+
+
+          <div class="shopingCart__itemSec__allItems__item__total">$33</div>
+
+        </div>
+
+      </div>
+
+
+      <div class="shopingCart__itemSec__cartOptions">
+
+        <input type="text" placeholder="Coupo Code" class="btn shopingCart__itemSec__cartOptions__couponCode">
+
+        <button class="btn btn--primary shopingCart__itemSec__cartOptions__couponBtn">APPLY COUPON</button>
+
+        <button class="btn btn--primary shopingCart__itemSec__cartOptions__updateCart">UPDATE CART</button>
+
+
+      </div>
+
+
+    </div>
+
+
+    <div class="shopingCart__priceSec">
+
+      <h2>CART TOTAL</h2>
+
+
+      <div class="shopingCart__priceSec__subTotal">
+        <div>SubTotal: </div>
+        <div>$33</div>
+      </div>
+
+
+      <div class="shopingCart__priceSec__shipping">
+        <p>Shipping: </p>
+        <div class="shopingCart__priceSec__shipping__options">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dolorum exercitationem laborum maxime numquam odit pariatur. Autem dignissimos</p>
+
+          <p>Calculate Shipping</p>
+
+          <select name="shippingCountry" id="">
+            <option value="selectNull">Select Country</option>
+            <option value="UK">UK</option>
+            <option value="USA">USA</option>
+          </select>
+
+          <input type="text" placeholder="State">
+          <input type="text" placeholder="Postal Code / Zip Code">
+          <button class="btn btn--primary">Update Total</button>
+        </div>
+
+
+      </div>
+
+      <div class="shopingCart__priceSec__total">
+        <div>Total: </div>
+        <div>$33</div>
+      </div>
+      <button class="btn btn--primary">Proceed to Checkout</button>
+
+    </div>
+
+
+  </div>
+
+
+</main>
+
+
+<footer class="footer shoppingCartFooter">
+
+  <div class="footer__content">
+    <div class="footer__content__cat">
+
+      <h2>Categories</h2>
+
+      <ul>
+        <li>Man</li>
+        <li>Woman</li>
+        <li>Shoes</li>
+        <li>Watches</li>
+      </ul>
+
+
+    </div>
+    <ul class="footer__content__links">
+      <h2>Follow us</h2>
+
+      <li>facebook</li>
+      <li>Twitter</li>
+      <li>instagram</li>
+      <li>behance</li>
+    </ul>
+
+
+    <div class="footer__content__notification">
+
+      <h2>Notifications</h2>
+
+
+      <p>To get monthly updates from us about our new featues and products, just provide us with your email.</p>
+
+      <div class="footer__content__notification__input">
+
+        <input type="email" placeholder="your email" >
+        <button>
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-envelop"></use>
+          </svg>
+        </button>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="footer__copyright">
+
+    <p>This webpage is recreated by AbdulRehman, originnaly created by Infinity and  Design by <a href="http://www.styleshout.com/">styleshout</a></p>
+
+  </div>
+
+
+</footer>
+
+<div class="searchModal closeModal">
+
+  <div class="searchModal__content">
+
+    <div class="searchModal__content__close">
+      <div class="searchModal__content__close__btn"></div>
+
+    </div>
+
+
+    <form action="#" class="searchModal__content__box">
+
+      <button>
+        <svg>
+          <use xlink:href="img/sprite.svg#icon-search
+"></use>
+        </svg>
+      </button>
+
+
+      <input type="search" placeholder="Search...">
+
+    </form>
+  </div>
+
+
+
+</div>
+
+
+<script src="js/script.js"></script>
+<script src="js/nav.js"></script>
+
+</body>
+</html>

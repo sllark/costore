@@ -1,0 +1,27 @@
+
+.blogTags{
+  width:100%;
+  @include flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+
+
+  li{
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    border: 1px solid $color-gray-500;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    transition: all 0.5s;
+    &:hover{
+      cursor: pointer;
+      border: 1px solid $color-gray-600;
+      color: $color-gray-600;
+
+    }
+
+  }
+}

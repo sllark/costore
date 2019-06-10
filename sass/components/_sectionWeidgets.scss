@@ -1,0 +1,146 @@
+
+.sectionWidgets{
+  width: 27%;
+
+  @include flex;
+  flex-flow: column;
+
+  h3{
+    font-size: 1.9rem;
+    color: $color-gray-900;
+    font-weight: 700;
+    text-align: left;
+    padding: 1rem 0;
+
+  }
+
+
+
+  &__searchBox{
+    border: 1px solid $color-gray-600;
+    @include flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border-radius: 50px;
+    width: 80%;
+    input{
+      font-size: 1.5rem;
+      color: black;
+      font-weight: 500;
+    }
+
+
+    svg{
+      width: 1.5rem;
+      height: 1.5rem;
+      fill: $color-gray-600;
+    }
+  }
+
+
+  &__categories{
+    padding: 4rem 0;
+    width: 75%;
+    ul{
+
+      width: 100%;
+      padding: 2rem 0;
+
+      li{
+        width: 100%;
+        padding: 1.5rem 0;
+        font-size: 1.6rem;
+        text-align: left;
+        border-bottom: 1px solid $color-gray-400;
+        font-family: Roboto;
+        &:first-child{
+          border-top: 1px solid $color-gray-400;
+        }
+
+        &:hover{
+          color: $color-gray-800;
+          font-weight: 600;
+          cursor: pointer;
+        }
+
+
+      }
+
+    }
+
+  }
+
+
+
+  &__products{
+
+    width: 80%;
+    height: auto;
+
+    &__product{
+
+      @include flex;
+      margin: 2.5rem 0;
+
+      &__img{
+        overflow: hidden;
+        height: auto;
+        width: auto;
+
+        img{
+          width: 10rem;
+          transform-origin: top;
+          transition: all 0.3s;
+          &:hover{
+            transform: scale(1.3);
+
+          }
+
+        }
+      }
+
+
+
+      &__detail{
+        //width: 100%;
+        height: 9rem;
+        padding: 0 0 0 1rem ;
+        @include flex;
+        //@include bblack;
+
+        flex-flow: column;
+        justify-content: space-around;
+        h4{
+          color: $color-gray-900;
+          font-size: 1.5rem;
+          text-align: left;
+        }
+        p{
+          text-align: left;
+          width: 100%;
+          font-size: 1.4rem;
+          color: $color-gray-600;
+        }
+
+      }
+
+
+    }
+
+  }
+
+
+
+
+  &__tags{
+
+    width: 80%;
+    @include flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+
+  }
+
+}

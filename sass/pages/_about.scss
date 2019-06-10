@@ -1,0 +1,127 @@
+.sectionAbout {
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  margin-top: 13rem;
+
+
+
+  @media screen and  (max-width: 25em) { //450px
+    padding: 2rem 1rem;
+  }
+
+
+  &__mission, &__story {
+    @include flex;
+
+    padding: 4rem 1rem 0;
+
+
+    @media screen and  (max-width: 50em) { //800px
+      flex-flow: column;
+      padding: 2rem 0 0;
+
+    }
+
+  }
+  &__text {
+    width: 70%;
+    font-size: 1.6rem;
+    padding: 0 4rem 0 1rem;
+
+
+    @media screen and  (max-width: 50em) { //800px
+      width: 95%;
+      padding: 1rem 0;
+      @include flex;
+      flex-flow: column;
+    }
+
+    h1 {
+      text-transform: capitalize;
+      font-size: 3.5rem;
+      color: black;
+      text-align: left;
+      font-weight: bold;
+      padding: 2rem;
+    }
+    p {
+      line-height: 1.6;
+      text-align: left;
+      font-family: 'Calibri',inherit;
+      padding: 0 4rem 0 1rem;
+
+
+      @media screen and  (max-width: 50em) { //800px
+        padding: 2rem 0;
+        text-align: center;
+      }
+
+    }
+  }
+
+  &__img {
+    width: 30%;
+    height: 100%;
+    position: relative;
+
+
+    @media screen and  (max-width: 50em) { //800px
+      width: 95%;
+      @include flex;
+    }
+    &__container {
+      overflow: hidden;
+      width: 90%;
+      img {
+        width: 100%;
+        transition: all 0.5s;
+        position: relative;
+        &:hover {
+          transform: scale(1.2);
+        }
+
+      }
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      width: 90%;
+      height: 100%;
+      border: 5px solid $color-gray-400;
+      position: absolute;
+      transform: translate(-2rem, 2rem);
+
+
+      @media screen and  (max-width: 50em) { //800px
+        display: none;
+      }
+    }
+
+  }
+
+  &__mission {
+    flex-flow: row-reverse;
+
+    @media screen and  (max-width: 50em) { //800px
+      flex-flow: column;
+    }
+
+    .sectionAbout__img{
+
+      &:before {
+
+        transform: translate(1rem, 2rem);
+      }
+    }
+
+
+  }
+
+}
+
+.aboutFooter{
+  position: relative;
+  top: 6rem;
+}

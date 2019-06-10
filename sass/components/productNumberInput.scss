@@ -1,0 +1,50 @@
+.productNumCount{
+
+
+  border: 1px solid $color-gray-300;
+  text-align: center;
+  @include flex;
+  width: auto;
+  height: 4rem;
+
+
+
+
+}
+.productNumberInput{
+  width: 4.5rem;
+  overflow: hidden;
+  height: 100%;
+  input{
+    background-color: $color-gray-300;
+    height: 100%;
+    text-align: center;
+    outline: none;
+    font-size: 2rem;
+    width: 150%;
+    border: none;
+    color: $color-gray-800;
+
+    @media screen and  (max-width: 40.625em) { //650px
+      text-align: center;
+    }
+
+    &:focus{
+      border: none;
+    }
+  }
+}
+
+
+.productNumDown,.productNumUp{
+  width: 4rem;
+  height: 100%;
+  @include flex;
+  font-size: 3rem;
+  color: black;
+  &:hover{
+    cursor: pointer;
+    background-color: #1EA6CC;
+    color: white;
+  }
+}

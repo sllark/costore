@@ -1,0 +1,361 @@
+.header{
+
+  position: fixed;
+  width: 100%;
+  height: auto;
+  z-index: 100;
+
+  &__shipping{
+    z-index: 99;
+    height: 3rem;
+    @include flex;
+    justify-content: space-between;
+    padding: 0 7rem;
+    font-size: 1.2rem;
+
+    background-color: $color-gray-900;
+    color: $color-gray-500;
+
+    transition: all 0.1s ease-in;
+
+    @media screen and  (max-width: 37.5em) { //600px
+      display: none;
+    }
+
+    p{
+      padding: 1rem 1rem;
+    }
+    ul{
+      @include flex;
+
+
+      li{
+
+        padding: 1rem 1.7rem;
+        display: flex;
+
+        border-left: 1px solid $color-gray-500;
+
+        &:last-child{
+          border-right: 1px solid $color-gray-500;
+        }
+
+        &:hover{
+          color: $color-blue-dark;
+        }
+
+
+
+      }
+    }
+  }
+
+
+  &__nav{
+    background-color: transparent;
+    @include flex;
+    justify-content: space-between;
+    padding: 0.8rem 7rem;
+    transition: all 0.2s ease-out;
+    position: relative;
+
+    @media screen and  (max-width: 46.875em) { //750px
+      padding: 0.8rem 2rem;
+
+    }
+
+    @media screen and  (max-width: 37.5em) { //600px
+
+      background-color: rgba($color-white,1);
+    }
+
+
+    @media screen and  (max-width: 23.125em) { //370px
+      padding: 0.8rem 1rem;
+    }
+
+
+    &__leftside{
+
+      @include flex;
+      position: relative;
+
+      text-align: center;
+      h2{
+        font-size: 2rem;
+        font-weight: bold;
+        color: #000;
+        padding: 1rem;
+
+
+        @media screen and  (max-width: 41.875em) { //670px
+          padding: 1rem 0.5rem;
+        }
+      }
+      ul{
+        @include flex;
+        width: 100%;
+        height: 100%;
+        padding: 0 3rem;
+
+        @media screen and  (max-width: 41.875em) { //670px
+          padding: 0 1rem;
+        }
+        @media screen and  (max-width: 37.5em) { //600px
+          display: none;
+        }
+
+        li{
+          font-size: 1.4rem;
+          font-weight: 700;
+          position: relative;
+          width: auto;
+          height: 100%;
+
+
+
+          &:nth-child(3){
+            &:after{
+              display: block;
+              content: 'Hot';
+              padding: 0.2rem 0.4rem;
+              border-radius: 20%;
+              text-align: center;
+              background-color: $color-blue;
+              position: absolute;
+              top: -1.8rem;
+              right: -0.2rem;
+              color: white;
+            }
+
+
+          }
+          &:hover{
+            color: rgba($color-blue,0.8);
+            cursor: pointer;
+          }
+
+
+          a{
+            padding: 1.5rem;
+            @media screen and  (max-width: 41.875em) { //670px
+              padding: 1.5rem 1rem;
+            }
+          }
+        }
+        .active{
+          color: $color-blue;
+        }
+      }
+
+
+    }
+
+    &__rightside{
+
+
+      svg{
+        width: 2rem;
+        height: 2rem;
+        margin: 1rem 2rem;
+
+
+
+        @media screen and  (max-width: 23.125em) { //370px
+          margin: 1rem 0.5rem;
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+
+    }
+
+      @media screen and  (max-width: 37.5em) { //600px
+        margin-right:6rem ;
+      }
+
+      @media screen and  (max-width: 23.125em) { //370px
+        margin-right:5rem ;
+
+      }
+
+
+    }
+
+
+
+  }
+
+
+
+  &__mobileNav{
+    position: absolute;
+    left: 0;
+    top: 100%;
+
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+
+    transition: all 0.2s ease-in-out;
+    transform-origin: top;
+    opacity: 1;
+    background-color: rgba($color-gray-200,0.9);
+
+    .mobileShipping{
+      display: flex;
+      flex-flow: column;
+      padding: 0;
+      height: auto;
+      p{
+        padding: 1rem 0;
+      }
+      hr{
+        width: 100%;
+        color: rgba($color-gray-500,0.2);
+      }
+    }
+
+    &__links{
+
+        @include flex;
+      flex-flow: column;
+        padding: 0 3rem;
+
+        @media screen and  (max-width: 41.875em) { //670px
+          padding: 0 1.5rem;
+        }
+
+        li{
+          width: 100%;
+          font-size: 1.4rem;
+          font-weight: 700;
+          padding: 1.5rem;
+          position: relative;
+
+          @media screen and  (max-width: 41.875em) { //670px
+            padding:1.5rem 1rem;
+          }
+
+
+          &:nth-child(3){
+            &:after{
+              display: block;
+              content: 'Hot';
+              padding: 0.2rem 0.4rem;
+              border-radius: 20%;
+              text-align: center;
+              background-color: $color-blue;
+              position: absolute;
+              transform: translate(0,50%);
+              left: 55%;
+              top: -0.3rem;
+              //right: -0.2rem;
+              color: white;
+            }
+
+
+          }
+          &:hover{
+            color: rgba($color-blue,0.8);
+            cursor: pointer;
+            background-color: black;
+          }
+        }
+        .active{
+          color: $color-blue;
+        }
+    }
+  }
+
+  .hideMobileNav{
+
+    //visibility: hidden;
+    //opacity: 0;
+    //transform: scale(0);
+  }
+}
+
+
+.addBg{
+  background-color: rgba($color-white,0.9);
+  box-shadow: 0 0.1rem 1rem rgba($color-gray-900,0.3);
+}
+
+
+
+.nav__menu{
+  width: 4rem;
+  height: 4rem;
+
+  position: fixed;
+  top: 0.8rem;
+  right: 3rem;
+  z-index: 999;
+  @include flex;
+  display: none;
+  transition: background-color 0.2s ease-in-out;
+
+  @media screen and  (max-width: 37.5em) { //600px
+
+    display: flex;
+  }
+
+
+  @media screen and  (max-width: 30em) { //480px
+    right: 2rem;
+  }
+
+  @media screen and  (max-width: 25em) { //400px
+  }
+  @media screen and  (max-width: 20.625em) { //330px
+    //width: 3rem;
+    //height: 3rem;
+
+  }
+  @media screen and  (max-width: 17.5em) { //280px
+    //width: 3.5rem;
+    //height: 3.5rem;
+
+  }
+
+
+  span{
+    width: 60%;
+    height: 3px;
+    background-color: black;
+    @media screen and  (max-width: 17.5em) { //280px
+      //width: 65%;
+    }
+
+    &:before{
+      content: '';
+      display: block;
+      width: auto;
+      height: 3px;
+      background-color: black;
+      transform: translateY(-0.8rem);
+
+    }
+
+    &:after{
+      content: '';
+      display: block;
+      width: auto;
+      height: 3px;
+      background-color: black;
+      transform: translateY(0.3rem);
+    }
+
+
+  }
+
+  &:hover{
+    cursor: pointer;
+   }
+
+
+
+
+}
+
+

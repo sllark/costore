@@ -1,0 +1,18 @@
+
+
+@mixin flex(){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+@mixin bpink(){
+  border: 1px solid hotpink;
+}
+@mixin bblack(){
+  border: 1px solid black;
+}
+
